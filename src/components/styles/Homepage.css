@@ -1,0 +1,193 @@
+
+main{
+  width: 100%;
+  margin: 40px auto 20px auto;
+  overflow: auto;
+  padding-bottom: 75px;
+}
+
+.page-header{
+  margin: 0 auto 0 auto;
+
+  text-align: center;
+  font-size: 52px;
+  font-family: 'Ubuntu', 'Helvetica', 'sans-serif'; 
+}
+
+@keyframes wave {
+  from {
+    -webkit-transform: none;
+    transform: none
+  }
+  15% {
+    -webkit-transform: translate3d(-25%,0,0) rotate3d(0,0,1,-15deg);
+    transform: translate3d(-25%,0,0) rotate3d(0,0,1,-15deg)
+  }
+  30% {
+    -webkit-transform: translate3d(15%,0,0) rotate3d(0,0,1,10deg);
+    transform: translate3d(15%,0,0) rotate3d(0,0,1,10deg)
+  }
+  45% {
+    -webkit-transform: translate3d(-20%,0,0) rotate3d(0,0,1,-12deg);
+    transform: translate3d(-20%,0,0) rotate3d(0,0,1,-12deg)
+  }
+  60% {
+    -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,6deg);
+    transform: translate3d(10%,0,0) rotate3d(0,0,1,d6eg)
+  }
+  75% {
+    -webkit-transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg);
+    transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg)
+  }
+  to {
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform: none;
+    transform: none
+  }
+  15% {
+    -webkit-transform: translate3d(-25%,0,0) rotate3d(0,0,1,-15deg);
+    transform: translate3d(-25%,0,0) rotate3d(0,0,1,-15deg)
+  }
+  30% {
+    -webkit-transform: translate3d(15%,0,0) rotate3d(0,0,1,10deg);
+    transform: translate3d(15%,0,0) rotate3d(0,0,1,10deg)
+  }
+  45% {
+    -webkit-transform: translate3d(-20%,0,0) rotate3d(0,0,1,-12deg);
+    transform: translate3d(-20%,0,0) rotate3d(0,0,1,-12deg)
+  }
+  60% {
+    -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,6deg);
+    transform: translate3d(10%,0,0) rotate3d(0,0,1,6deg)
+  }
+  75% {
+    -webkit-transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg);
+    transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg)
+  }
+  to {
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+.waving-hand{
+  width: 52px;
+  padding: 0 10px;
+}
+
+.wave-animation:hover{
+  animation: wave 1s ease;
+  animation-iteration-count: 1;
+  -webkit-animation: wave 1s ease;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes bounceUp {
+  from {
+    -webkit-transform: none;
+    transform: none;
+  }
+  20%  { 
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);  
+  }
+  40%  {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); 
+  }
+  60%  {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);  
+  }
+  80%  {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); 
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes bounceUp {
+  from {
+    -webkit-transform: none;
+    transform: none;
+  }
+  20%  { 
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);  
+  }
+  40%  {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); 
+  }
+  60%  {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);  
+  }
+  80%  {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); 
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounce-animation:hover{
+  animation: bounceUp 1s ease;
+  animation-iteration-count: 1;
+  -webkit-animation: bounceUp 1s ease;
+  -webkit-animation-iteration-count: 1;
+}
+
+.self-description{
+  margin: 50px auto;
+  width: 85%;
+  max-width: 750px;
+
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.self-description a{
+  color: #C61951;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.self-description p{
+  margin-top: 10px;
+}
+
+.info-links{
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Ubuntu', 'Helvetica', 'sans-serif'; 
+  font-weight: bolder;
+}
+
+.info-link{
+  margin: 5px 20px;
+  
+  padding: 15px 25px;
+  display: inline-block;
+
+  background-color: #FF8EA2;
+  color: #222;
+}
+
+.info-link:hover{
+  box-shadow: -5px 5px #C61951;
+  transition: 0.15s ease;
+}
