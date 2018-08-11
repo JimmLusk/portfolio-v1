@@ -15,10 +15,10 @@ export default class Header extends React.Component {
           <div className='header-back-4'></div>
         </div>
         <nav className='header-nav'>
-          <a href='/' className='site-title'>Jimm Lusk</a>
+          <a href='/' className='site-title'><h1>Jimm Lusk</h1></a>
           <a href='/portfolio' className='portfolio-nav nav-link'>Portfolio</a>
           <a href='/about' className='about-nav nav-link'>About</a>
-          <a href='/contact' className='contact-nav nav-link'>Contact</a>
+          <a href='/#contact' className='contact-nav nav-link'>Contact</a>
         </nav>
       </header>
     )

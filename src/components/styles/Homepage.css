@@ -1,17 +1,17 @@
 
 main{
   width: 100%;
-  margin: 40px auto 20px auto;
+  margin: 40px 0 20px 0;
   overflow: auto;
   padding-bottom: 75px;
 }
 
 .page-header{
   margin: 0 auto 0 auto;
-
   text-align: center;
-  font-size: 52px;
+  font-size: 3.5em;
   font-family: 'Ubuntu', 'Helvetica', 'sans-serif'; 
+  font-weight: 500;
 }
 
 @keyframes wave {
@@ -88,73 +88,13 @@ main{
   -webkit-animation-iteration-count: 1;
 }
 
-@keyframes bounceUp {
-  from {
-    -webkit-transform: none;
-    transform: none;
-  }
-  20%  { 
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);  
-  }
-  40%  {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px); 
-  }
-  60%  {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);  
-  }
-  80%  {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px); 
-  }
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@-webkit-keyframes bounceUp {
-  from {
-    -webkit-transform: none;
-    transform: none;
-  }
-  20%  { 
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);  
-  }
-  40%  {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px); 
-  }
-  60%  {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);  
-  }
-  80%  {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px); 
-  }
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.bounce-animation:hover{
-  animation: bounceUp 1s ease;
-  animation-iteration-count: 1;
-  -webkit-animation: bounceUp 1s ease;
-  -webkit-animation-iteration-count: 1;
-}
-
 .self-description{
   margin: 50px auto;
   width: 85%;
   max-width: 750px;
 
-  text-align: center;
+  text-align: left;
+  line-height: 1.25;
   font-size: 26px;
   font-family: 'Open Sans', 'Arial', sans-serif;
 }
@@ -185,9 +125,49 @@ main{
 
   background-color: #FF8EA2;
   color: #222;
+  transition: 0.2s ease;
 }
 
 .info-link:hover{
   box-shadow: -5px 5px #C61951;
+  transform: scale(1.05) translateX(5px) translateY(-5px);
   transition: 0.15s ease;
 }
+
+.recent-projects{
+  margin-top: 4.5em;
+}
+
+.recent-projects>h2{
+  margin-bottom: 1em;
+  font-size: 2.75em;
+}
+
+.contact{
+  margin-top: 4.5em;
+}
+
+.contact h2{
+  margin-bottom: 0.5em;
+  font-size: 2.75em;
+}
+
+.contact p{
+  font-size: 1.25em;
+}
+
+.contact-links{
+  display: inline-block;
+}
+
+.contact-links img{
+  width: 50px;
+  margin: 10px 15px;
+  transition: 0.15s;
+}
+
+.contact-links img:hover{
+  transform: scale(1.1);
+  transition: 0.15s;
+}
+

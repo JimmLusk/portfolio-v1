@@ -1,0 +1,122 @@
+
+.about-page section{
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto;
+  max-height: 150px;
+  font-size: 1em;
+}
+
+.avi{
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  box-shadow: -3px 5px 0 1px #C61951, -6px 10px 0 1px #F64662, -9px 15px 0 1px #FF8EA2;
+}
+
+.details{
+  padding: 15px 0 0 15px;
+}
+
+.details img{
+  width: 22px;
+}
+
+
+
+
+
+.skills{
+  padding-top: 6em;
+}
+
+.skills h2{
+  font-size: 2.75em;
+}
+
+.skills h3{
+  font-size: 1.3em;
+}
+
+.skills-lists-cotainer{
+  max-width: 900px;
+  margin: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills-list{
+  margin-bottom: 2em;
+}
+
+.skills ul{
+  font-family: 'Open-sans', 'Arial', 'sans-serif';
+  font-size: 1.0em;
+  line-height: 1.75em;
+  list-style: none;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.recs{
+  max-width: 700px;
+}
+
+.recs h2{
+  font-size: 2.5em;
+}
+
+.rec img{
+  width: 40px;
+  height: 50px;
+  align-self: center;
+}
+
+.rec{
+  margin: 1em 2em;
+  border: #C61951 2px solid;
+  display: flex;
+}
+
+.rec-body{
+  margin: 1.5em 4% 1em 2%;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.rec-credit{
+  text-align: right;
+  margin: 0 2em 1em 0;
+}
+
+.rec a{
+  font-weight: bolder;
+  color: #C61951;
+}
+
+.rec-credit a:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+
+@media screen and (max-width: 415px){
+  .intro{
+    flex-direction: column;
+    max-height:250px;
+  }
+
+  .recs h2{
+    font-size: 2em;
+  }
+  
+}

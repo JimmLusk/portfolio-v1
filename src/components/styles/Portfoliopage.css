@@ -1,0 +1,19 @@
+
+main{
+  text-align: center;
+}
+
+main h1{
+  font-size: 3.5em;
+  /* color: #741938; */
+  font-family: 'Ubuntu', 'Helvetica', 'sans-serif'; 
+}
+
+.projects{
+  margin: 0 1.25em;
+  list-style: none;
+}
+
+.projects li{
+  margin: 3em 0;
+}

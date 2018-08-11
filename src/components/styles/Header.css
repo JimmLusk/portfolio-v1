@@ -36,22 +36,23 @@ a{
 .site-title{
   color: white;
   background-color: #222;
-  font-size: 32px;
+  font-size: 26px;
   font-family: 'Ubuntu', 'Helvetica', 'sans-serif'; 
   font-weight: 500;
   font-style: italic;
   padding: 4px 12px 8px 8px;
   line-height: 32px;
   display: block;
-  
-  width: 175px;
+  transition: 0.25s ease;
+  width: 160px;
 }
 
 .nav-link{
   color: #222;
   background-color: white;
+  transition: 0.20s ease;
 
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 5px;
   padding: 4px 6px 4px 4px;
   display: inline-block;
 
@@ -60,15 +61,24 @@ a{
   font-size: 22px;
 }
 
-.portfolio-nav{
-  /* margin-left: 0; */
+.nav-link:hover{
+  box-shadow: -3px 3px #C61951;
+  transform: scale(1.015) translateX(2px) translateY(-2px);
+  transition: 0.2s ease;
+}
+
+.site-title:hover{
+  box-shadow: -4px 4px #741938;
+  transform: scale(1.02) translateX(4px) translateY(-4px);
+  transition: 0.2s ease;
 }
 
 
 
-@media only screen and (min-width: 518px) {
+@media only screen and (min-width: 525px) {
   .site-title{
-    display: inline;
+    display: inline-block;
+    width: 160px;
   }
   .portfolio-nav{
     margin-left: 15px;

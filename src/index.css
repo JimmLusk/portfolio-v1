@@ -1,10 +1,84 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans", "Helvetica", sans-serif;
 }
 
 html, body, #root{
   height: 100%;
   min-height: 100%;
+}
+
+body {
+  color: #262626;
+  background-color: #FBFBF8;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ubuntu', 'Helvetica', 'sans-serif'; 
+}
+
+@keyframes bounceUp {
+  from {
+    -webkit-transform: none;
+    transform: none;
+  }
+  20%  { 
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);  
+  }
+  40%  {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); 
+  }
+  60%  {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);  
+  }
+  80%  {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); 
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes bounceUp {
+  from {
+    -webkit-transform: none;
+    transform: none;
+  }
+  20%  { 
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);  
+  }
+  40%  {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); 
+  }
+  60%  {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);  
+  }
+  80%  {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); 
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounce-animation:hover{
+  transition: 0.5s;
+}
+
+.bounce-animation:hover{
+  animation: bounceUp 1s ease;
+  animation-iteration-count: 1;
+  -webkit-animation: bounceUp 1s ease;
+  -webkit-animation-iteration-count: 1;
 }
