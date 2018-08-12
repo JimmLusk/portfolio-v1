@@ -18,7 +18,7 @@ class Homepage extends React.Component {
         </header>
         <section className='self-description'>
           <p>
-             I'm a full-stack JavaScript web application developer and student of <a href='https://www.thinkful.com/' className='bounce-animation'>Thinkful's</a> "Engineering Immersion" program. You can view my portfolio or learn more about me below. 
+             I'm a full-stack JavaScript web application developer{/* and student of <a href='https://www.thinkful.com/' className='bounce-animation'>Thinkful's</a> "Engineering Immersion" program*/}. You can view my portfolio or learn more about me below. 
           </p>
         </section>
         <section className='info-links'>

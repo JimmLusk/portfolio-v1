@@ -10,14 +10,19 @@ footer{
   background-color: #F64662;
 }
 
-.by-me{
-  margin: 20px auto 0 auto;
+.by-me, .attribution{
+  margin: 10px auto 0 auto;
   text-align: center;
-  font-size: 16px;
+  font-size: 0.8em;
   font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
 .developer-emoji{
-  width: 18px;
+  width: 0.9em;
   padding-left: 3px;
+}
+
+footer a{
+  color: #741938;
+  font-weight: bolder;
 }
